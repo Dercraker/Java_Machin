@@ -31,7 +31,9 @@ public class Main {
             //userRepository.Add(new UserInformation("Antoine","UwU", dateNow, "Homme"));
             //activityRepository.Add(new Activity("Vélo", dateNow, 5D, 60L));
 
-            userRepository.GetUserInformation();
+            UserInformation user = userRepository.GetUserInformation();
+            userRepository.Delete(user);
+            user = userRepository.GetUserInformation();
         }
     }
 }
