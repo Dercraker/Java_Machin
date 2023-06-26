@@ -5,4 +5,6 @@ import com.mongodb.client.result.InsertOneResult;
 
 public interface IUserRepository {
     InsertOneResult Add(UserInformation userInformation);
+    UserInformation GetUserInformation();
+
 }

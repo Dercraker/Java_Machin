@@ -13,14 +13,6 @@ public class Activity {
     private Long Duration;
     private Double Charge;
 
-    public Activity(String name, Date activityDate, Double RPE, Long duration) {
-        Name = name;
-        ActivityDate = activityDate;
-        this.RPE = RPE;
-        Duration = duration;
-        this.setCharge();
-    }
-
     public Activity(String name, Date activityDate, Double RPE, Long duration, Double charge) {
         Name = name;
         ActivityDate = activityDate;
@@ -82,7 +74,8 @@ public class Activity {
         return Charge;
     }
 
-    public void setCharge() {
-        Charge = getDuration() * getRPE();
+    public void setCharge(Double charge) {
+        Charge = charge;
     }
+
 }

@@ -2,11 +2,8 @@ package com.dercraker.models;
 
 import org.bson.types.ObjectId;
 
-import java.sql.Date;
-import java.text.DateFormat;
-import java.util.ArrayList;
+import java.util.Date;
 import java.util.List;
-import java.util.UUID;
 
 public class UserInformation {
     private ObjectId UserId;
@@ -15,6 +12,9 @@ public class UserInformation {
     private Date BirthDay;
     private String Sex;
     private List<Activity> Activities;
+
+    public UserInformation() {
+    }
 
     public UserInformation(ObjectId userId, String firstName, String lastName, Date birthDay, String sex, List<Activity> activities) {
 

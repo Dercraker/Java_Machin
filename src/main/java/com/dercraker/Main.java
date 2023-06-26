@@ -27,10 +27,11 @@ public class Main {
             ActivityRepository activityRepository = new ActivityRepository(database.getCollection("Activities"));
 
 
-            Date dateNow = new Date(1687784335L);
+            //Date dateNow = new Date(1687784335L);
+            //userRepository.Add(new UserInformation("Antoine","UwU", dateNow, "Homme"));
+            //activityRepository.Add(new Activity("Vélo", dateNow, 5D, 60L));
 
-            userRepository.Add(new UserInformation("Antoine","UwU", dateNow, "Homme"));
-            activityRepository.Add(new Activity("Vélo", dateNow, 5D, 60L));
+            userRepository.GetUserInformation();
         }
     }
 }
